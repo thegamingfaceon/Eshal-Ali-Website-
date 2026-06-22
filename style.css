@@ -1,0 +1,500 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7f5;
+color:#222;
+line-height:1.7;
+transition:.4s;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+.dark{
+background:#121212;
+color:#fff;
+}
+
+.dark .section,
+.dark .product,
+.dark .dua-card,
+.dark .asma-card{
+background:#1f1f1f;
+color:#fff;
+}
+
+.dark input,
+.dark textarea,
+.dark select{
+background:#333;
+color:#fff;
+border:1px solid #666;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+),
+url("https://images.unsplash.com/photo-1585036156171-384164a8c675");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,.4);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+nav button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#d4af37;
+}
+
+.hero-content{
+text-align:center;
+margin-top:180px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#0b6e4f;
+color:white;
+padding:14px 25px;
+border-radius:10px;
+text-decoration:none;
+}
+
+.btn:hover{
+background:#084d38;
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+.section{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.08);
+}
+
+.section h2{
+text-align:center;
+margin-bottom:20px;
+color:#0b6e4f;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+#searchInput,
+#productSearch{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* ==========================
+   SURAH BUTTONS
+========================== */
+
+.surah-buttons{
+text-align:center;
+margin-bottom:20px;
+}
+
+.surah-buttons button{
+padding:12px 20px;
+margin:5px;
+border:none;
+background:#0b6e4f;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.surah-buttons button:hover{
+background:#084d38;
+}
+
+/* ==========================
+   ARABIC TEXT
+========================== */
+
+.arabic{
+direction:rtl;
+font-size:32px;
+line-height:2;
+text-align:right;
+background:#eef8f1;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+}
+
+/* ==========================
+   AUDIO
+========================== */
+
+audio{
+width:100%;
+margin-top:15px;
+}
+
+/* ==========================
+   TRANSLATION
+========================== */
+
+.translation,
+.tafseer{
+margin-top:20px;
+background:#eef8f1;
+padding:15px;
+border-radius:10px;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:300px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   DUA CARDS
+========================== */
+
+.dua-card{
+background:#eef8f1;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+}
+
+.dua-card h3{
+margin-bottom:10px;
+}
+
+/* ==========================
+   ASMA UL HUSNA
+========================== */
+
+.asma-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.asma-card{
+background:#eef8f1;
+padding:20px;
+text-align:center;
+font-size:22px;
+font-weight:600;
+border-radius:10px;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table th{
+background:#0b6e4f;
+color:white;
+}
+
+table th,
+table td{
+border:1px solid #ddd;
+padding:12px;
+text-align:center;
+}
+
+/* ==========================
+   NAMAZ LIST
+========================== */
+
+ol{
+padding-left:30px;
+}
+
+ol li{
+margin:10px 0;
+}
+
+/* ==========================
+   QIBLA
+========================== */
+
+.qibla-box{
+margin-top:20px;
+background:#0b6e4f;
+color:white;
+padding:30px;
+text-align:center;
+font-size:25px;
+border-radius:12px;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea,
+select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+form button{
+background:#0b6e4f;
+color:white;
+padding:12px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+/* ==========================
+   STORE
+========================== */
+
+.products{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.product{
+background:white;
+padding:20px;
+width:300px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.product img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product h3{
+margin-top:15px;
+}
+
+.product p{
+margin:10px 0;
+}
+
+.product button{
+background:#0b6e4f;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* ==========================
+   TASBEEH
+========================== */
+
+#tasbeeh{
+text-align:center;
+}
+
+#counter{
+font-size:80px;
+color:#0b6e4f;
+margin:20px 0;
+}
+
+#tasbeeh button{
+padding:12px 25px;
+margin:5px;
+border:none;
+background:#0b6e4f;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* ==========================
+   TIME
+========================== */
+
+#timeBox{
+font-size:30px;
+text-align:center;
+color:#0b6e4f;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+background:#0b6e4f;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+footer button{
+margin-top:15px;
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content{
+margin-top:120px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.arabic{
+font-size:24px;
+}
+
+.gallery img{
+width:100%;
+}
+
+.product{
+width:100%;
+}
+
+.section{
+width:95%;
+padding:20px;
+}
+
+}

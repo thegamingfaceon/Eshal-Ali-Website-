@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Islamic Quran Academy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="hero">
+
+<nav>
+
+<div class="logo">
+ Islamic Quran Academy
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#quran">Quran</a></li>
+
+<li><a href="#ramzan">Ramzan</a></li>
+
+<li><a href="#namaz">Namaz</a></li>
+
+<li><a href="#duas">Duas</a></li>
+
+<li><a href="#classes">Classes</a></li>
+
+<li><a href="#store">Store</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button onclick="toggleDarkMode()">
+🌙
+</button>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>
+📖 Learn Quran Online
+</h1>
+
+<p>
+
+Read Quran • Listen Audio • Learn Tajweed • Online Classes
+
+</p>
+
+<a href="#quran" class="btn">
+
+Start Reading
+
+</a>
+
+</div>
+
+</header>
+
+<!-- HOME -->
+
+<section id="home" class="section">
+
+<h2>
+Welcome To Islamic Quran Academy
+</h2>
+
+<p>
+
+Islamic Quran Academy ek educational Islamic platform hai
+jahan aap Quran padh sakte hain, audio sun sakte hain,
+Quran classes join kar sakte hain aur Islamic knowledge hasil
+kar sakte hain.
+
+</p>
+
+</section>
+
+<!-- QURAN READER -->
+
+<section id="quran" class="section">
+
+<h2>
+📖 Quran Reader
+</h2>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Surah..."
+onkeyup="searchSurah()">
+
+<div class="surah-buttons">
+
+<button onclick="showSurah('ikhlas')">
+Surah Ikhlas
+</button>
+
+<button onclick="showSurah('nas')">
+Surah Nas
+</button>
+
+<button onclick="showSurah('kausar')">
+Surah Kausar
+</button>
+
+</div>
+
+<h3 id="surahTitle">
+
+Select A Surah
+
+</h3>
+
+<div id="arabicText" class="arabic">
+
+Select A Surah
+
+</div>
+
+<audio id="audioPlayer" controls></audio>
+
+<div class="translation">
+
+<h3>
+Urdu Translation
+</h3>
+
+<p id="translationText">
+
+Select A Surah
+
+</p>
+
+</div>
+
+<div class="tafseer">
+
+<h3>
+Short Tafseer
+</h3>
+
+<p id="tafseerText">
+
+Select A Surah
+
+</p>
+
+</div>
+
+</section>
+
+<!-- QURAN GALLERY -->
+
+<section class="section">
+
+<h2>
+📸 Quran Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1585036156171-384164a8c675" alt="Quran">
+
+<img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae" alt="Quran">
+
+<img src="https://images.unsplash.com/photo-1596125160970-6f02eeba00d3" alt="Quran">
+
+</div>
+
+</section>
+
+<!-- RAMZAN -->
+
+<section id="ramzan" class="section">
+
+<h2>
+🌙 Ramzan-ul-Mubarak
+</h2>
+
+<h3>
+Ramzan Kya Hai?
+</h3>
+
+<p>
+
+Ramzan Islam ka muqaddas mahina hai.
+Isi mahine mein Quran Kareem nazil hua.
+
+</p>
+
+<h3>
+Roza Kya Hai?
+</h3>
+
+<p>
+
+Subah Sehri se Maghrib tak Allah ke liye
+khana peena aur buri baaton se bachna Roza hai.
+
+</p>
+
+<h3>
+Roza Ki Fazilat
+</h3>
+
+<ul>
+
+<li>Roza Allah ke liye hai.</li>
+
+<li>Roza gunahon ki maafi ka sabab hai.</li>
+
+<li>Roza Jannat ka zariya hai.</li>
+
+<li>Ramzan rehmat aur barkat ka mahina hai.</li>
+
+</ul>
+
+<h3>
+Roza Ki Niyat
+</h3>
+
+<p>
+
+وَبِصَوْمِ غَدٍ نَوَيْتُ مِنْ شَهْرِ رَمَضَانَ
+
+</p>
+
+<h3>
+Iftar Ki Dua
+</h3>
+
+<p>
+
+اللَّهُمَّ إِنِّي لَكَ صُمْتُ وَ بِكَ آمَنْتُ وَعَلَيْكَ تَوَكَّلْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ
+
+</p>
+
+</section>
+
+<!-- DAILY DUAS -->
+
+<section id="duas" class="section">
+
+<h2>
+🤲 Daily Duas
+</h2>
+
+<div class="dua-card">
+
+<h3>
+Pani Peene Ki baad ki Dua
+</h3>
+
+<p>
+
+الْحَمْدُ لِلَّهِ الَّذِي سَقَانَا عَذَبًا فُرَانًا بِرَحْمَتِهِ وَلَمْ يَجْعَلُهُ مِلْحًا أُجَاجًا بِذُنُوبِنَا
+
+</p>
+
+</div>
+
+<div class="dua-card">
+
+<h3>
+Khana Khane Ki Dua
+</h3>
+
+<p>
+
+بِسْمِ اللّٰهِ وَعَلٰی بَرَكَةِ اللّٰهِ
+
+</p>
+
+</div>
+
+<div class="dua-card">
+
+<h3>
+Ghar Se Nikalne Ki Dua
+</h3>
+
+<p>
+
+بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللهِ
+لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ
+
+</p>
+
+</div>
+
+<div class="dua-card">
+
+<h3>
+Sone Ki Dua
+</h3>
+
+<p>
+
+اَللّٰهُمَّ بِاسْمِكَ اَمُوتُ وَاَحْيَا
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ASMA UL HUSNA -->
+
+<section id="asma" class="section">
+
+<h2>
+🕋 Asma-ul-Husna
+</h2>
+
+<div class="asma-grid">
+
+<div class="asma-card">
+الرَّحْمٰنُ
+<br>
+Ar Rahman
+</div>
+
+<div class="asma-card">
+الرَّحِيمُ
+<br>
+Ar Raheem
+</div>
+
+<div class="asma-card">
+الْمَلِكُ
+<br>
+Al Malik
+</div>
+
+<div class="asma-card">
+الْقُدُّوسُ
+<br>
+Al Quddus
+</div>
+
+<div class="asma-card">
+السَّلَامُ
+<br>
+As Salaam
+</div>
+
+<div class="asma-card">
+الْمُؤْمِنُ
+<br>
+Al Mu'min
+</div>
+
+<div class="asma-card">
+الْعَزِيزُ
+<br>
+Al Aziz
+</div>
+
+<div class="asma-card">
+الرَّزَّاقُ
+<br>
+Ar Razzaq
+</div>
+
+</div>
+
+</section>
+
+<!-- NAMAZ GUIDE -->
+
+<section id="namaz" class="section">
+
+<h2>
+🕌 Namaz Guide
+</h2>
+
+<table>
+
+<tr>
+<th>Namaz</th>
+<th>Rakats</th>
+</tr>
+
+<tr>
+<td>Fajr</td>
+<td>2 Sunnat + 2 Farz</td>
+</tr>
+
+<tr>
+<td>Dhuhr</td>
+<td>4 Sunnat + 4 Farz + 2 Sunnat + 2 nafil</td>
+</tr>
+
+<tr>
+<td>Asr</td>
+<td>4 sunnat + 4 Farz</td>
+</tr>
+
+<tr>
+<td>Maghrib</td>
+<td>3 Farz + 2 Sunnat + 2 nafil</td>
+</tr>
+
+<tr>
+<td>Isha</td>
+<td>4 sunnat + 4 Farz + 2 Sunnat + 2 nafil + 3 Witr + 2 nafil</td>
+</tr>
+
+</table>
+
+<h3>
+📖 Namaz Ka Tarika
+</h3>
+
+<ol>
+
+<li>Niyyat Karein</li>
+
+<li>Takbeer-e-Tehreema</li>
+
+<li>Sana Parhein</li>
+
+<li>Surah Fatiha</li>
+
+<li>Koi Surah Milayein</li>
+
+<li>Ruku Karein</li>
+
+<li>Qaumah Karein</li>
+
+<li>Sajdah Karein</li>
+
+<li>Tashahhud Parhein</li>
+
+<li>Durood Shareef</li>
+
+<li>Dua</li>
+
+<li>Salaam Pherein</li>
+
+</ol>
+
+</section>
+
+<!-- QIBLA -->
+
+<section class="section">
+
+<h2>
+🧭 Qibla Direction
+</h2>
+
+<p>
+
+Pakistan se Qibla Makkah Mukarramah ki taraf
+West / South-West direction mein hota hai.
+
+</p>
+
+<div class="qibla-box">
+
+🕋 Qibla Direction
+
+</div>
+
+</section>
+
+<!-- QURAN CLASSES -->
+
+<section id="classes" class="section">
+
+<h2>
+🎓 Quran Classes Registration
+</h2>
+
+<form id="registrationForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="text"
+placeholder="Father Name"
+required>
+
+<input
+type="number"
+placeholder="Age"
+required>
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<input
+type="text"
+placeholder="Phone Number"
+required>
+
+<select required>
+
+<option value="">
+Select Course
+</option>
+
+<option>
+Noorani Qaida
+</option>
+
+<option>
+Nazra Quran
+</option>
+
+<option>
+Tajweed
+</option>
+
+<option>
+Hifz-ul-Quran
+</option>
+
+</select>
+
+<textarea
+placeholder="Address"
+required>
+</textarea>
+
+<button type="submit">
+
+Register Now
+
+</button>
+
+</form>
+
+</section>
+
+<!-- STORE -->
+
+<section id="store" class="section">
+
+<h2>
+🛒 Islamic Store
+</h2>
+
+<input
+type="text"
+id="productSearch"
+placeholder="Search Product..."
+onkeyup="searchProducts()">
+
+<div class="products">
+
+<div class="product">
+
+<img
+src="https://images.unsplash.com/photo-1585036156171-384164a8c675"
+width="200">
+
+<h3>
+Holy Quran
+</h3>
+
+<p>
+Price: Rs.1500
+</p>
+
+<button onclick="addToCart('Holy Quran')">
+
+Add To Cart
+
+</button>
+
+</div>
+
+<div class="product">
+
+<img
+src="https://images.unsplash.com/photo-1519817650390-64a93db51149"
+width="200">
+
+<h3>
+Prayer Mat
+</h3>
+
+<p>
+Price: Rs.2000
+</p>
+
+<button onclick="addToCart('Prayer Mat')">
+
+Add To Cart
+
+</button>
+
+</div>
+
+<div class="product">
+
+<img
+src="https://images.unsplash.com/photo-1576764402988-7143f9cca90a"
+width="200">
+
+<h3>
+Quran
+</h3>
+
+<p>
+Price: Rs.2500
+</p>
+
+<button onclick="addToCart('Tasbeeh')">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+<h3>
+
+🛒 Cart:
+<span id="cartCount">0</span>
+
+</h3>
+
+</section>
+
+<!-- CHECKOUT -->
+
+<section class="section">
+
+<h2>
+💳 Checkout
+</h2>
+
+<p>
+
+Easypaisa Number:
+0300-1234567
+
+</p>
+
+<p>
+
+JazzCash Number:
+0300-1234567
+
+</p>
+
+<input
+type="text"
+placeholder="Customer Name">
+
+<input
+type="text"
+placeholder="Phone Number">
+
+<textarea
+placeholder="Delivery Address">
+</textarea>
+
+<button>
+
+Place Order
+
+</button>
+
+</section>
+
+<!-- TASBEEH -->
+
+<section id="tasbeeh" class="section">
+
+<h2>
+📿 Digital Tasbeeh
+</h2>
+
+<h1 id="counter">
+0
+</h1>
+
+<button onclick="increaseTasbeeh()">
+SubhanAllah
+</button>
+
+<button onclick="resetTasbeeh()">
+Reset
+</button>
+
+</section>
+
+<!-- ISLAMIC CALENDAR -->
+
+<section class="section">
+
+<h2>
+🗓 Islamic Information
+</h2>
+
+<p>
+
+📖 Quran Kareem:
+114 Surahs
+
+</p>
+
+<p>
+
+🌙 Ramzan:
+9th Islamic Month
+
+</p>
+
+<p>
+
+🕋 Hajj:
+Zil Hajj Month
+
+</p>
+
+<p>
+
+🤲 Daily Quran Reading:
+At least 1 Ruku Daily
+
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<h2>
+📞 Contact Us
+</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="text"
+placeholder="Phone Number"
+required>
+
+<textarea
+placeholder="Write Message"
+required>
+</textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- CURRENT TIME -->
+
+<section class="section">
+
+<h2>
+🕒 Current Time
+</h2>
+
+<h3 id="timeBox">
+
+Loading...
+
+</h3>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<h3>
+☪ Islamic Quran Academy
+</h3>
+
+<p>
+
+Read Quran • Learn Islam • Join Quran Classes
+
+</p>
+
+<p>
+
+📖 Quran Reader
+
+</p>
+
+<p>
+
+🕌 Namaz Guide
+
+</p>
+
+<p>
+
+🤲 Daily Duas
+
+</p>
+
+<p>
+
+🕋 Asma-ul-Husna
+
+</p>
+
+<p>
+
+🎓 Quran Classes
+
+</p>
+
+<p>
+
+🛒 Islamic Store
+
+</p>
+
+<p>
+
+💳 Easypaisa & JazzCash Available
+
+</p>
+
+<button onclick="goTop()">
+
+⬆ Back To Top
+
+</button>
+
+</div>
+
+<hr>
+
+<p>
+
+ 2026 Islamic Quran Academy.
+All Rights Reserved.
+This Website Is Made By Eshal Ali 
+
+</p>
+
+</footer>
+
+<!-- SCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
